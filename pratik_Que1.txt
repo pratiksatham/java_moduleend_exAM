@@ -1,0 +1,51 @@
+public class Car {
+    private int year;a) */a)Create a new Java class named Car that has the following private fields*/
+    private String make;
+    private double speed;
+Car(int y,String x,double z){  b)constructor
+this.year=y;
+this.make=x;
+this.speed=z;
+}
+    return year;
+public int getyear(){ b)getter methods
+}
+
+public String getmake(){
+    return make;
+}
+
+
+public double getspeed(){
+    System.out.println("you are going"+this.speed+"mph");
+    return speed;
+}
+
+void accelarate(){ b)accelarate methods
+    speed=speed+1;
+	
+} 
+}
+
+class Racetrack{ c) creating class Racetrack
+	public static void main(String[]args){
+	Car c =new Car(1889,"BMW",200.88);
+	 System.out.println("Car name is: " +c.getmake());
+	 System.out.println("Car model year is: " + c.getyear());
+	System.out.println("Current speed is: " + c.getspeed());
+	c.accelarate();
+	System.out.println("Current speed is: " + c.getspeed());
+                                   
+	}
+}
+
+
+
+C:\SRC\Day1>javac Car.java
+
+C:\SRC\Day1>java Racetrack
+you are going200.88mph
+Current speed is: 200.88
+Current year is: 1889
+you are going201.88mph
+Current speed is: 201.88

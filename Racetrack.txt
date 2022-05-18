@@ -1,0 +1,11 @@
+class Racetrack{
+	public static void main(String[]args){
+	Car c =new Car(1889,"BMW",200.88);
+	 System.out.println("Car name is: " +c.getmake());
+	 System.out.println("Car model year is: " + c.getyear());
+	System.out.println("Current speed is: " + c.getspeed());
+	c.accelarate();
+	System.out.println("Current speed is: " + c.getspeed());
+                                   
+	}
+}
